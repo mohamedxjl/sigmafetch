@@ -22,3 +22,8 @@ if [ $? -ne 0 ]; then
 	echo "$error wmctrl is not installed" 
 	exit 1; 
 fi
+
+chmod +x sigmafetch
+cp sigmafetch /usr/bin
+
+echo "[$green*$reset] Installation Done! type sigmafetch to start."

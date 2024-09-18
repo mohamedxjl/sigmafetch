@@ -24,8 +24,8 @@ case "$distro" in
     Fedora|CentOS|RHEL)
         cmd="rpm -qa | wc -l"
         ;;
-    Arch)
-        cmd="pacman -Qe | wc -l"
+    "Arch Linux")
+        cmd="pacman -Q | wc -l"
         ;;
     Gentoo)
         cmd="qlist -I | wc -l"
@@ -43,7 +43,6 @@ case "$distro" in
 esac
 
 package_count=$(eval "$cmd")
-
 
 # colors
 red=$(tput setaf 1)
@@ -73,7 +72,4 @@ printf "$yellow CPU$reset: $cpu_name\n"
 printf "$yellow GPU$reset: $gpu_name\n"
 echo ""
 echo "$green==============================$reset"
-
-
-
 
