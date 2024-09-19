@@ -14,7 +14,7 @@ cd sigmafetch
 sudo bash install.sh
 ```
 # Supported OSs
-- Arch linux
+- Arch linux, EndeavourOS
 - Debian, Ubuntu
 - Fedora, RHEL, CentOS
 - Gentoo
