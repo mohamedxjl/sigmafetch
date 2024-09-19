@@ -13,7 +13,7 @@ uptime=$(uptime -p)
 de=$(wmctrl -m | grep -o '.*XDG_SESSION_DESKTOP=.*' | cut -d '=' -f 2 | sed 's/\"//g')
 wm=$(wmctrl -m | grep -o '.*WM_NAME=.*' | cut -d '=' -f 2 | sed 's/\"//g')
 cpu_name=$(lscpu | grep -i "Model name" | cut -d ':' -f 2 | sed 's/^\s*//g')
-gpu_name=$(lspci | grep -i "VGA" | cut -d ':' -f 2 | sed 's/^\s*//g')
+gpu_name=$(lspci | grep -i "VGA" | cut -d ':' -f 3 | sed 's/^\s*//g')
 distro=$(cat /etc/os-release | grep PRETTY_NAME | cut -d '=' -f 2 | sed 's/\"//g')
 ram=$(free -h | awk '/^Mem/ { print $3"\\"$2 }' | sed s/i//g)
 # Determine the appropriate command based on the distribution
