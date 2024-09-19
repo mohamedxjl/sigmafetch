@@ -24,7 +24,7 @@ case "$distro" in
     Fedora|CentOS|RHEL)
         cmd="rpm -qa | wc -l"
         ;;
-    "Arch Linux")
+    "Arch Linux"|EndeavourOS)
         cmd="pacman -Q | wc -l"
         ;;
     Gentoo)
