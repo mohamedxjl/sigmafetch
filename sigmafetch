@@ -55,11 +55,9 @@ white=$(tput setaf 7)
 reset=$(tput sgr0)
 
 # info
-
-echo "$green==============================$reset"
-echo "$green=======$USER@$hostname========$reset"
-echo "$green==============================$reset"
 echo ""
+echo "$red $USER$reset@$green$hostname$reset"
+echo "$green--------------------------------------$reset"
 printf "$yellow OS$reset: $os_name\n"
 printf "$yellow kernel$reset: $kernel\n"
 printf "$yellow Arch$reset: $arch\n"
@@ -71,6 +69,5 @@ printf "$yellow WM$reset: $wm\n"
 echo "$yellow RAM$reset: $ram"
 printf "$yellow CPU$reset: $cpu_name\n"
 printf "$yellow GPU$reset: $gpu_name\n"
+echo "$green--------------------------------------$reset"
 echo ""
-echo "$green==============================$reset"
-
