@@ -6,7 +6,7 @@ Minimalest sysinfo app.
 ## Installing Sigmafetch
 - Clone the repo
 ```
-git clone https://github.com/xjlsigmaboy/sigmafetch.git
+git clone https://github.com/mohamedxjl/sigmafetch.git
 ```
 - Installation
 ```
