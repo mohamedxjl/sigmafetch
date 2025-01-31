@@ -21,4 +21,5 @@ sudo ./install.sh
 - Gentoo
 - NixOS
 - Void Linux
+- Alpine Linux Edge
   
