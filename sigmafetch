@@ -35,6 +35,9 @@ case "$distro" in
     "Void Linux")
 	cmd="xbps-query --list-pkgs | wc -l"
 	;;
+    "Alpine Linux edge")
+    	cmd="apk list -I | wc -l"
+	;;
 	*)
         echo "Unsupported distribution: $distro"
         exit 1
